@@ -11,14 +11,13 @@ spec:
     matchLabels:
       name: worker-app-deploy
       app: demo-voting-app
-      
   template:
     metadata:
-     name: worker-app-pod
-     labels:
-       name: worker-app-pod
-       app: demo-voting-app
+      name: worker-app-pod
+      labels:
+        name: worker-app-pod
+        app: demo-voting-app
     spec:
-     containers:
-      - name: worker-app
-        image: kodekloud/examplevotingapp_worker:v1
+      containers:
+        - name: worker-app
+          image: kodekloud/examplevotingapp_worker:v1
